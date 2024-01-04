@@ -1,0 +1,147 @@
+/* instagram css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 공통 */
+#instagram_area {
+  position: relative;
+  top: -40px;
+  background: radial-gradient(
+      circle farthest-corner at 32% 106%,
+      #ffe17d 0%,
+      #ffcd69 10%,
+      #fa9137 28%,
+      #eb4141 42%,
+      transparent 82%
+    ),
+    linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+}
+
+/* instagram title */
+.instagram_title h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: lighter;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: "Lobster", sans-serif;
+}
+/* instagram contents */
+.instagram_contents {
+  padding: 0 0 50px 0;
+}
+
+#instagram-feed {
+  display: flex;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.insta-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 내용(작성시간, 텍스트) */
+.caption {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  padding: 0px 8px 8px 8px;
+  -webkit-line-clamp: 3;
+}
+
+/* 작성시간 */
+.timestamp {
+  color: gray;
+  font-size: 10px;
+  text-align: right;
+  padding: 10px 0px 0px 0px;
+}
+
+/* 텍스트 */
+.caption a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 이미지 크기 및 여백 설정 */
+.insta-image-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 4px;
+  box-sizing: border-box;
+  background-color: white;
+  filter: brightness(50%);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .insta-image-container {
+    filter: none;
+  }
+}
+
+.insta-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  box-sizing: border-box;
+  border-radius: 5px 5px 0px 0px;
+  background-color: white;
+}
+/* hover 효과 설정 */
+.insta-image-container:hover {
+  border-radius: 5px;
+  filter: brightness(100%); /*이미지의 밝기 조절 */
+}
+
+/* 텍스트 더보기 버튼 */
+.read-more-button {
+  cursor: pointer;
+  color: #3c589f;
+}
+
+.read-more-button:hover {
+  text-decoration: underline;
+}
+
+.read-more-button a:hover {
+  text-decoration: none;
+}
+
+/* slick 설정 */
+.slick-slider {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-round-btn {
+  border-radius: 50%;
+  padding: 10px 10px;
+  /* font-size: 20px; */
+  border: none;
+  cursor: pointer;
+  background-color: transparent !important;
+}
+
+.slick-round-btn:hover {
+  background-color: gray;
+}

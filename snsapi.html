@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SNS API</title>
+    <!-- slick & jquery -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <!-- font -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Kanit:wght@600&family=Oswald:wght@700&family=Passion+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/facebookstyle.css" />
+    <link rel="stylesheet" href="./css/instastyle.css" />
+    <link rel="stylesheet" href="./css/youtubestyle.css" />
+    <!-- slick & jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js"></script>
+  </head>
+  <body>
+    <!-- ------------------------------- facebook ------------------------------- -->
+    <div id="facebook_area">
+      <div class="facebook_title">
+        <h2 align="center">Facebook</h2>
+      </div>
+      <div class="facebook_contents" align="center">
+        <div
+          id="facebook-feed"
+          class="slick-slider"
+          style="overflow-x: hidden"
+        ></div>
+        <script src="./js/facebook.js"></script>
+      </div>
+    </div>
+    <!-- ------------------------------- instagram ------------------------------- -->
+    <script src="/absolute/path/to/instafeed.min.js" type="text/html"></script>
+    <div id="instagram_area">
+      <div class="instagram_title">
+        <h2 align="center">Instagram</h2>
+      </div>
+      <div class="instagram_contents" align="center">
+        <div
+          id="instagram-feed"
+          class="slick-slider"
+          style="overflow-x: hidden"
+        ></div>
+        <script src="./js/insta.js"></script>
+      </div>
+    </div>
+    <!-- ------------------------------- youtube ------------------------------- -->
+    <div id="youtube_area">
+      <div class="youtube_title">
+        <h2 align="center">YouTube</h2>
+      </div>
+      <div class="youtube_contents" align="center">
+        <div
+          id="videos-container"
+          class="slick-slider"
+          style="overflow-x: hidden"
+        ></div>
+        <script src="./js/youtube.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
